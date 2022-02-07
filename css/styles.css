@@ -1,0 +1,17 @@
+.b-header{
+    background: url('../img/back2.png') no-repeat center center;
+    background-size:cover;
+    min-height: 550px;
+    
+}
+.b-btn-search{
+    border-radius:10px 0  0 10px !important;
+}
+.b-searchbox{
+    border-radius: 0 10px 10px 0 !important;
+}
+
+.b-shadow{
+    border-radius: 5px !important;
+    border: 1px solid #ecf0f4;
+}

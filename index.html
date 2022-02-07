@@ -10,16 +10,67 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Styles CSS -->
-    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
 
     <title>Hello, world!</title>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container">
+    <header class="b-header">
+        <!-- Start Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+            <div class="container">
 
-            <a class="navbar-brand" href="#">ArmyTech</a>
+                <a class="navbar-brand" href="#">ArmyTech</a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">صفحه اصلی</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">آخرین دوره ها</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">وبلاگ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">قوانین سایت</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">تماس باما</a>
+                        </li>
+
+                    </ul>
+                </div>
+
+                <ul class="navbar-nav  mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">ورود</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">ثبت نام</a>
+                    </li>
+
+                </ul>
+            </div>
+            </div>
+        </nav>
+        <!-- End Navbar -->
+
+        <!-- Search box -->
+    </header>
+
+    <!-- Second Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-transparent mt-3">
+        <div class="container">
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -30,6 +81,9 @@
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">صفحه اصلی</a>
+                    </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">آخرین دوره ها</a>
                     </li>
@@ -42,23 +96,56 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#">تماس باما</a>
                     </li>
-                  
+
                 </ul>
             </div>
 
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                    <a class="nav-link" href="#">ورود</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">ثبت نام</a>
-                </li>
-        
-            </ul>
+            <form class="d-flex">
+                <input class="form-control me-2 b-searchbox" type="search" placeholder="جستجوی دوره"
+                    aria-label="Search">
+                <button class="btn btn-dark b-btn-search" type="submit">جستجو</button>
+            </form>
         </div>
         </div>
     </nav>
+    <!-- End Second Navbar -->
 
+    <!-- Start Slider -->
+
+    <div class="container">
+      <div class="row mt-5 mb-3">
+        <div id="carouselExampleControls" class="carousel slide col-lg-8 col-md-8 col-sm-12 px-lg-3 p-sm-0" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/Slide01.png" class="d-block w-100" alt="C#">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/Slide02.jpg" class="d-block w-100" alt="Python">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/slide03.jpg" class="d-block w-100" alt="PHP">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <div class="col-lg-3 col-md-3  mt-lg-0 mt-sm-3">
+            <div class="b-shadow">
+
+            </div>
+
+        </div>
+      </div>
+    </div>
+    <!-- End Slider -->
     <script src="js/bootstrap.bundle.min.js"></script>
 
 </body>
