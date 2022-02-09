@@ -1,3 +1,13 @@
+@font-face {
+    font-family: "vazir";
+    src: url("../fonts/vazir/Vazir-Bold-FD-WOL.eot?#iefix") format("embedded-opentype"), 
+    url("../fonts/vazir/Vazir-Bold-FD-WOL.ttf") format("truetype"), 
+    url("../fonts/vazir/Vazir-Bold-FD-WOL.svg#svgFontName") format("svg");
+}
+
+body {
+    font-family: vazir;
+}
 .b-header{
     background: url('../img/back2.png') no-repeat center center;
     background-size:cover;
