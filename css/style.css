@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'Vazir';
+    src: url('../fonts/vazir/Vazir-Medium.eot');
+    src: url('../fonts/vazir/Vazir-Medium.eot#?iefix') format('embedded-opentype'),
+    url('../fonts/vazir/Vazir-Medium.ttf') format('truetype'),
+    url('../fonts/vazir/Vazir-Medium.woff') format('woff')
+}
+*{
+    font-family: 'Vazir';
+}
+.w-35{
+    width: 35% !important;
+}
+body::before{
+    display: block;
+    content: '';
+    height: 60px;
+}
+
+a{
+    text-decoration: none;
+}
+@media(min-width:768px){
+    .news-input{
+        width: 50%;
+    }
+}
