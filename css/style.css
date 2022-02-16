@@ -1,27 +1,137 @@
 @font-face {
-    font-family: 'Vazir';
-    src: url('../fonts/vazir/Vazir-Medium.eot');
-    src: url('../fonts/vazir/Vazir-Medium.eot#?iefix') format('embedded-opentype'),
-    url('../fonts/vazir/Vazir-Medium.ttf') format('truetype'),
-    url('../fonts/vazir/Vazir-Medium.woff') format('woff')
-}
-*{
-    font-family: 'Vazir';
-}
-.w-35{
-    width: 35% !important;
-}
-body::before{
-    display: block;
-    content: '';
-    height: 60px;
+    font-family: "vazir";
+    src        : url("../fonts/vazir/Vazir-Bold-FD-WOL.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/vazir/Vazir-Bold-FD-WOL.ttf") format("truetype"),
+        url("../fonts/vazir/Vazir-Bold-FD-WOL.svg#svgFontName") format("svg");
 }
 
-a{
-    text-decoration: none;
+body {
+    font-family: vazir;
 }
-@media(min-width:768px){
-    .news-input{
-        width: 50%;
+
+i {
+    padding: 0 .5rem !important;
+}
+
+.b-header {
+    background     : url('../img/back2.png') no-repeat center center;
+    background-size: cover;
+    min-height     : 550px;
+
+}
+
+.b-btn-search {
+    border-radius: 10px 0 0 10px !important;
+}
+
+.b-searchbox {
+    border-radius: 0 10px 10px 0 !important;
+    font-size: 13px;
+}
+
+.w-85 {
+    width: 85%;
+}
+
+.p-half {
+    padding: .5rem;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+    color          : #000;
+}
+
+.fs-half {
+    font-size: .75rem !important;
+}
+
+.h-border {
+    height: 2px !important;
+}
+
+.text-lightblue {
+    color: #57CDEF;
+}
+
+.text-lightgreen {
+    color: #A7C95A;
+}
+
+.b-copyright {
+    background-color: #0F1111;
+    font-size: .9rem;
+}
+
+#topNav li a {
+    font-size: .8rem;
+}
+
+.b-header .b-login-box {
+    background-color: rgba(255, 255, 255, 0.103);
+    padding         : .4rem;
+    border-radius   : 10px;
+    font-size       : .8rem;
+    color           : rgb(255, 63, 63);
+    margin-right    : 1.5rem;
+}
+
+.b-login-box i {
+    font-size: 1rem;
+}
+
+#secNav {
+    padding-right: 0;
+}
+
+#secNav li a{
+    font-size: .9rem;
+    color: rgb(63, 62, 62) !important;
+}
+
+.b-search-box {
+    padding-left: 0 !important;
+}
+.b-emailer input{
+    font-size: .6rem;
+    height: 40px;
+}
+.b-curse-title{
+    font-size: .9rem;
+}
+.b-curse-desc{
+    font-size: .8rem;
+}
+.b-border{
+    border: #e4e4e4 solid 1px;
+}
+.b-shadow{
+    box-shadow: 0 0 15px 3px #e4e4e4;
+}
+
+
+.b-transition{
+    width: 100px;
+    height: 50px;
+    transition: width 1s, height 1s;
+
+}
+.b-transition:hover{
+    width: 150px;
+    height: 70px;
+    
+
+}
+@media (max-width:767px){
+    #topNav{
+        margin-top: 1rem;
+    }
+    .b-curse-title{
+        font-size: .8rem;
+    }
+
+    .b-curse-desc{
+        font-size: .7rem;
     }
 }

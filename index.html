@@ -1,423 +1,1157 @@
-<!DOCTYPE html>
-<html lang="en" dir="rtl">
+<!doctype html>
+<html dir="rtl">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Awesome font css -->
-    <link rel="stylesheet" href="css/all.min.css">
+    <!-- Bootstrap CSS -->
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Bootstrap css -->
-    <link rel="stylesheet" href="/css/bootstrap.min.css">
-    <!-- Custom Css -->
-    <link rel="stylesheet" href="css/style.css">
+    <!-- Styles CSS -->
+    <link rel="stylesheet" href="./css/styles.css">
 
-    <title>BootStrap 5 Test</title>
-    
+    <!-- Fontawesome style -->
+    <link rel="stylesheet" href="./css/awesome.min.css">
+
+    <title>آرمی تک | ArmyTech</title>
 </head>
 
 <body>
-    <!-- Start Navbar -->
-    <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top">
+    <header class="b-header">
+        <!-- Start Navbar -->
+        <nav class="navbar navbar-expand navbar-dark">
+            <div class="container pt-2">
+                <div class="row w-100 text-center">
+                    <div class="col-6 col-md-3 order-first">
+                        <!-- <img src="img/logo.png"> -->
+                        <a class="navbar-brand " href="#">
+                            آرمی تک
+                        </a>
+                    </div>
+                    <div class="col-12 col-md-6" id="topNav">
+                        <ul class="navbar-nav justify-content-center">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#">صفحه اصلی</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">قوانین سایت</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">درباره آرمی تک</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 col-6 order-first order-md-last">
+                        <a class="b-login-box" href="#">
+                            حساب کاربری
+                            <i class="fa fa-regular fa-user"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- End Navbar -->
+    </header>
+
+    <!-- Second Navbar -->
+    <nav class="navbar navbar-expand-md navbar-light bg-transparent mt-3 ">
         <div class="container">
-            <a href="#" class="navbar-brand">
-                <h2>
-                    ArmyTech
-                </h2>
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#topNavMenu">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#secNav"
+                aria-controls="secNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="topNavMenu">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a href="#Home" class="nav-link active">صفحه اصلی</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#Learn" class="nav-link">آخرین دوره ها</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#Home" class="nav-link">وبلاگ</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#Home" class="nav-link">درباره ما</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#Home" class="nav-link">قوانین سایت</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#Home" class="nav-link">ارتباط با ما</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#Questions" class="nav-link">پرسش و پاسخ</a>
-                    </li>
-                </ul>
+            <div class="mx-0 row w-100 align-items-center">
+                <div class="col-md-12 col-lg-8 collapse navbar-collapse" id="secNav">
+                    <ul class="navbar-nav p-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">آخرین دوره ها</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">دوره های جدید</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">بیشترین بازدید</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">وبلاگ</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="b-search-box col-md-12 col-lg-4 my-2 my-sm-0">
+                    <form class="d-flex">
+                        <input class="form-control me-2 b-searchbox" type="search" placeholder="جستجو..."
+                            aria-label="Search">
+                        <button class="btn btn-danger b-btn-search" type="submit">جستجو</button>
+                    </form>
+                </div>
+
             </div>
+
         </div>
     </nav>
-    <!-- End Navbar -->
+    <!-- End Second Navbar -->
 
-    <!-- Start ShowCase -->
-    <section class="bg-dark text-light text-center p-5 p-lg-0 pt-lg-5 text-sm-end">
-        <div class="container">
-            <div class="d-sm-flex align-items-center justify-content-between">
-                <div>
-                    <h2>
-                        وبسایت آموزشی آکادمی
-                        <span class="text-warning">آرمی تک</span>
-                    </h2>
-                    <p class="lead py-4">
-                        ما بر آموزش اصول جدیدترین و بهترین فناوری ها به دانش آموزان خود تمرکز می کنیم تا آنها را برای
-                        اولین نقش توسعه دهنده خود آماده کنیم
-                    </p>
-                    <button class="btn btn-primary btn-lg">
-                        شروع ثبت نام
-                    </button>
+    <!-- Start Slider -->
+    <div class="container">
+        <div class="row text-center justify-content-between my-5">
+            <div id="LatestCourses" class="carousel slide col-lg-8 col-md-8 col-sm-12" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/Slide01.png" class="d-block w-100" alt="C#">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/Slide02.jpg" class="d-block w-100" alt="Python">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/slide03.jpg" class="d-block w-100" alt="PHP">
+                    </div>
                 </div>
-                <img src="images/bg.png" alt="Programmer" class="img-fluid w-35 d-none d-sm-block">
+                <button class="carousel-control-prev" type="button" data-bs-target="#LatestCourses"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#LatestCourses"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
+            <div id="FavoraiteSlider" class="carousel slide col-lg-3 col-md-3 col-sm-12 " data-bs-ride="carousel">
+                <p class="text-end text-secondary mt-3 mt-sm-0 mb-3 ">
+                    <i class="fa-solid fa-heart "></i>
+                    دوره های محبوب سایت آرمی تک
+                </p>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        
+                            <div class="card bg-light text-dark b-shadow bg-opacity-75">
+                                <div class="card-body text-center border-1  p-half">
+                                    <img src="./img/Flutter.png" alt="Flutter" class="img-fluid">
+                                    <div class="card-title py-2">
+                                        <p class="text-end b-curse-title"> آموزش برنامه نویسی فلاتر </p>
+                                        <p class="text-end text-secondary b-curse-desc">
+                                            در این دوره فلاتر را از صفر شروع میکنیم به یادگیری و در آخر یه پروژه کاملا کاربردی
+                                            را طراحی میکنیم تا از دانشی که داریم استفاده کنیم
+                                        </p>
+                                    </div>
+                                    <div class="card-text justify-content-end text-end">
+                                        <i class="fa-solid fa-user text-secondary fs-half"></i>
+                                        <a href="#" class="fs-half text-primary">حسینی</a>
+        
+                                    </div>
+                                    <hr class="h-border">
+                                    <div
+                                        class=" row card-footer justify-content-between bg-transparent px-0 align-items-center">
+                                        <span class=" col text-lightblue fs-half m-0 p-0">
+                                            <i class="fa-solid fa-clock"></i> 11:24:30
+                                        </span>
+                                        <span class="col text-lightgreen m-0 fs-half p-0">
+                                            100,000 تومان
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                    </div>
+                    <div class="carousel-item">
+                        
+                            <div class="card bg-light text-dark b-shadow bg-opacity-75">
+                                <div class="card-body text-center border-1 p-half">
+                                    <img src="./img/ASP.png" alt="Flutter" class="img-fluid">
+                                    <div class="card-title py-2">
+                                        <p class="text-end b-curse-title"> آموزش ASP بصورت پروژه محور</p>
+                                        <p class="text-end text-secondary b-curse-desc">
+                                            در این دوره به مباحثی میپردازیم که در آن با استفاده از یک برنامه اندرویدی اطلاعات
+                                            شخصی خود را ثبت کنیم
+                                        </p>
+                                    </div>
+                                    <div class="card-text justify-content-end text-end">
+                                        <i class="fa-solid fa-user text-secondary fs-half"></i>
+                                        <a href="#" class="fs-half text-primary">حسینی</a>
+        
+                                    </div>
+                                    <hr class="h-border">
+                                    <div
+                                        class=" row card-footer justify-content-between bg-transparent px-0 align-items-center">
+                                        <span class=" col text-lightblue fs-half m-0 p-0">
+                                            <i class="fa-solid fa-clock"></i> 11:24:30
+                                        </span>
+                                        <span class="col text-lightgreen m-0 fs-half p-0">
+                                            100,000 تومان
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                    </div>
+                    <div class="carousel-item">
+                        
+                            <div class="card bg-light text-dark b-shadow bg-opacity-75">
+                                <div class="card-body text-center border-1 p-half">
+                                    <img src="./img/BootStrap.jpg" alt="Flutter" class="img-fluid">
+                                    <div class="card-title py-2">
+                                        <p class="text-end b-curse-title"> آموزش بوت استرپ بصورت پروژه محور</p>
+                                        <p class="text-end text-secondary b-curse-desc">
+                                            در این دوره با استفاده از بوت استرپ باهم یه پروژه ساده ولی کاربردی رو طراحی میکنیم
+                                            تا به بوت استرپ تسلط کامل داشته باشیم
+                                        </p>
+                                    </div>
+                                    <div class="card-text justify-content-end text-end">
+                                        <i class="fa-solid fa-user text-secondary fs-half"></i>
+                                        <a href="#" class="fs-half text-primary">حسینی</a>
+        
+                                    </div>
+                                    <hr class="h-border">
+                                    <div
+                                        class=" row card-footer justify-content-between bg-transparent px-0 align-items-center">
+                                        <span class=" col text-lightblue fs-half m-0 p-0">
+                                            <i class="fa-solid fa-clock"></i> 11:24:30
+                                        </span>
+                                        <span class="col text-lightgreen m-0 fs-half p-0">
+                                            100,000 تومان
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#FavoraiteSlider"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#FavoraiteSlider"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
         </div>
-    </section>
-    <!-- End ShowCase -->
+    </div>
+    <!-- End Slider -->
 
-    <!-- Start NewsLetter -->
-    <section class="bg-primary text-light p-5">
+    <!-- Start Latest Cusers -->
+    <section class="container">
+        <header class="row justify-content-between mt-5 ">
+            <h6 class="col">آخرین دوره ها</h6>
+            <a href="#" class="col text-start fs-half">
+                مشاهده همه دوره ها
+                <i class="fa-solid fa-arrow-left text-lightblue"></i>
+            </a>
+        </header>
+
+        <div class="justify-content-between">
+            <!-- Start Line One -->
+            <div class="row g-4 my-1 ">
+                <!-- Flutter  -->
+                <div class="col-md col-6">
+                    <div class="card bg-light text-dark b-shadow bg-opacity-75">
+                        <div class="card-body text-center border-1  p-half">
+                            <img src="./img/Flutter.png" alt="Flutter" class="img-fluid">
+                            <div class="card-title py-2">
+                                <p class="text-end b-curse-title"> آموزش برنامه نویسی فلاتر </p>
+                                <p class="text-end text-secondary b-curse-desc">
+                                    در این دوره فلاتر را از صفر شروع میکنیم به یادگیری و در آخر یه پروژه کاملا کاربردی
+                                    را طراحی میکنیم تا از دانشی که داریم استفاده کنیم
+                                </p>
+                            </div>
+                            <div class="card-text justify-content-end text-end">
+                                <i class="fa-solid fa-user text-secondary fs-half"></i>
+                                <a href="#" class="fs-half text-primary">حسینی</a>
+
+                            </div>
+                            <hr class="h-border">
+                            <div
+                                class=" row card-footer justify-content-between bg-transparent px-0 align-items-center">
+                                <span class=" col text-lightblue fs-half m-0 p-0">
+                                    <i class="fa-solid fa-clock"></i> 11:24:30
+                                </span>
+                                <span class="col text-lightgreen m-0 fs-half p-0">
+                                    100,000 تومان
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End FLutter -->
+
+                <!-- Start Asp -->
+                <div class="col-md col-6">
+                    <div class="card bg-light text-dark b-shadow bg-opacity-75">
+                        <div class="card-body text-center border-1 p-half">
+                            <img src="./img/ASP.png" alt="Flutter" class="img-fluid">
+                            <div class="card-title py-2">
+                                <p class="text-end b-curse-title"> آموزش ASP بصورت پروژه محور</p>
+                                <p class="text-end text-secondary b-curse-desc">
+                                    در این دوره به مباحثی میپردازیم که در آن با استفاده از یک برنامه اندرویدی اطلاعات
+                                    شخصی خود را ثبت کنیم
+                                </p>
+                            </div>
+                            <div class="card-text justify-content-end text-end">
+                                <i class="fa-solid fa-user text-secondary fs-half"></i>
+                                <a href="#" class="fs-half text-primary">حسینی</a>
+
+                            </div>
+                            <hr class="h-border">
+                            <div
+                                class=" row card-footer justify-content-between bg-transparent px-0 align-items-center">
+                                <span class=" col text-lightblue fs-half m-0 p-0">
+                                    <i class="fa-solid fa-clock"></i> 11:24:30
+                                </span>
+                                <span class="col text-lightgreen m-0 fs-half p-0">
+                                    100,000 تومان
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Asp -->
+
+                <!-- Start bootStrap -->
+                <div class="col-md col-6">
+                    <div class="card bg-light text-dark b-shadow bg-opacity-75">
+                        <div class="card-body text-center border-1 p-half">
+                            <img src="./img/BootStrap.jpg" alt="Flutter" class="img-fluid">
+                            <div class="card-title py-2">
+                                <p class="text-end b-curse-title"> آموزش بوت استرپ بصورت پروژه محور</p>
+                                <p class="text-end text-secondary b-curse-desc">
+                                    در این دوره با استفاده از بوت استرپ باهم یه پروژه ساده ولی کاربردی رو طراحی میکنیم
+                                    تا به بوت استرپ تسلط کامل داشته باشیم
+                                </p>
+                            </div>
+                            <div class="card-text justify-content-end text-end">
+                                <i class="fa-solid fa-user text-secondary fs-half"></i>
+                                <a href="#" class="fs-half text-primary">حسینی</a>
+
+                            </div>
+                            <hr class="h-border">
+                            <div
+                                class=" row card-footer justify-content-between bg-transparent px-0 align-items-center">
+                                <span class=" col text-lightblue fs-half m-0 p-0">
+                                    <i class="fa-solid fa-clock"></i> 11:24:30
+                                </span>
+                                <span class="col text-lightgreen m-0 fs-half p-0">
+                                    100,000 تومان
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Bootstrap -->
+
+                <!-- Start Python -->
+                <div class="col-md col-6">
+                    <div class="card bg-light text-dark b-shadow bg-opacity-75">
+                        <div class="card-body text-center border-1 p-half">
+                            <img src="./img/Python.png" alt="Flutter" class="img-fluid">
+                            <div class="card-title py-2">
+                                <p class="text-end b-curse-title"> آموزش هوش مصنوعی در پایتون</p>
+                                <p class="text-end text-secondary b-curse-desc">
+                                    در این دوره با استفاده از پایتون باهم به مباحث هوش مصنوعی میپردازیم و قدم به قدم
+                                    باهم یادمیگیریم
+                                </p>
+                            </div>
+                            <div class="card-text justify-content-end text-end">
+                                <i class="fa-solid fa-user text-secondary fs-half"></i>
+                                <a href="#" class="fs-half text-primary">حسینی</a>
+
+                            </div>
+                            <hr class="h-border">
+                            <div
+                                class=" row card-footer justify-content-between bg-transparent px-0 align-items-center">
+                                <span class=" col text-lightblue fs-half m-0 p-0">
+                                    <i class="fa-solid fa-clock"></i> 11:24:30
+                                </span>
+                                <span class="col text-lightgreen m-0 fs-half p-0">
+                                    100,000 تومان
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Python -->
+            </div>
+            <!-- End Line One -->
+
+            <!-- Start Line two -->
+            <div class="row g-4 my-1 ">
+                <!-- Flutter  -->
+                <div class="col-md col-6">
+                    <div class="card bg-light text-dark b-shadow bg-opacity-75">
+                        <div class="card-body text-center border-1  p-half">
+                            <img src="./img/Flutter.png" alt="Flutter" class="img-fluid">
+                            <div class="card-title py-2">
+                                <p class="text-end b-curse-title"> آموزش برنامه نویسی فلاتر </p>
+                                <p class="text-end text-secondary b-curse-desc">
+                                    در این دوره فلاتر را از صفر شروع میکنیم به یادگیری و در آخر یه پروژه کاملا کاربردی
+                                    را طراحی میکنیم تا از دانشی که داریم استفاده کنیم
+                                </p>
+                            </div>
+                            <div class="card-text justify-content-end text-end">
+                                <i class="fa-solid fa-user text-secondary fs-half"></i>
+                                <a href="#" class="fs-half text-primary">حسینی</a>
+
+                            </div>
+                            <hr class="h-border">
+                            <div
+                                class=" row card-footer justify-content-between bg-transparent px-0 align-items-center">
+                                <span class=" col text-lightblue fs-half m-0 p-0">
+                                    <i class="fa-solid fa-clock"></i> 11:24:30
+                                </span>
+                                <span class="col text-lightgreen m-0 fs-half p-0">
+                                    100,000 تومان
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End FLutter -->
+
+                <!-- Start Asp -->
+                <div class="col-md col-6">
+                    <div class="card bg-light text-dark b-shadow bg-opacity-75">
+                        <div class="card-body text-center border-1 p-half">
+                            <img src="./img/ASP.png" alt="Flutter" class="img-fluid">
+                            <div class="card-title py-2">
+                                <p class="text-end b-curse-title"> آموزش ASP بصورت پروژه محور</p>
+                                <p class="text-end text-secondary b-curse-desc">
+                                    در این دوره به مباحثی میپردازیم که در آن با استفاده از یک برنامه اندرویدی اطلاعات
+                                    شخصی خود را ثبت کنیم
+                                </p>
+                            </div>
+                            <div class="card-text justify-content-end text-end">
+                                <i class="fa-solid fa-user text-secondary fs-half"></i>
+                                <a href="#" class="fs-half text-primary">حسینی</a>
+
+                            </div>
+                            <hr class="h-border">
+                            <div
+                                class=" row card-footer justify-content-between bg-transparent px-0 align-items-center">
+                                <span class=" col text-lightblue fs-half m-0 p-0">
+                                    <i class="fa-solid fa-clock"></i> 11:24:30
+                                </span>
+                                <span class="col text-lightgreen m-0 fs-half p-0">
+                                    100,000 تومان
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Asp -->
+
+                <!-- Start bootStrap -->
+                <div class="col-md col-6">
+                    <div class="card bg-light text-dark b-shadow bg-opacity-75">
+                        <div class="card-body text-center border-1 p-half">
+                            <img src="./img/BootStrap.jpg" alt="Flutter" class="img-fluid">
+                            <div class="card-title py-2">
+                                <p class="text-end b-curse-title"> آموزش بوت استرپ بصورت پروژه محور</p>
+                                <p class="text-end text-secondary b-curse-desc">
+                                    در این دوره با استفاده از بوت استرپ باهم یه پروژه ساده ولی کاربردی رو طراحی میکنیم
+                                    تا به بوت استرپ تسلط کامل داشته باشیم
+                                </p>
+                            </div>
+                            <div class="card-text justify-content-end text-end">
+                                <i class="fa-solid fa-user text-secondary fs-half"></i>
+                                <a href="#" class="fs-half text-primary">حسینی</a>
+
+                            </div>
+                            <hr class="h-border">
+                            <div
+                                class=" row card-footer justify-content-between bg-transparent px-0 align-items-center">
+                                <span class=" col text-lightblue fs-half m-0 p-0">
+                                    <i class="fa-solid fa-clock"></i> 11:24:30
+                                </span>
+                                <span class="col text-lightgreen m-0 fs-half p-0">
+                                    100,000 تومان
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Bootstrap -->
+
+                <!-- Start Python -->
+                <div class="col-md col-6">
+                    <div class="card bg-light text-dark b-shadow bg-opacity-75">
+                        <div class="card-body text-center border-1 p-half">
+                            <img src="./img/Python.png" alt="Flutter" class="img-fluid">
+                            <div class="card-title py-2">
+                                <p class="text-end b-curse-title"> آموزش هوش مصنوعی در پایتون</p>
+                                <p class="text-end text-secondary b-curse-desc">
+                                    در این دوره با استفاده از پایتون باهم به مباحث هوش مصنوعی میپردازیم و قدم به قدم
+                                    باهم یادمیگیریم
+                                </p>
+                            </div>
+                            <div class="card-text justify-content-end text-end">
+                                <i class="fa-solid fa-user text-secondary fs-half"></i>
+                                <a href="#" class="fs-half text-primary">حسینی</a>
+
+                            </div>
+                            <hr class="h-border">
+                            <div
+                                class=" row card-footer justify-content-between bg-transparent px-0 align-items-center">
+                                <span class=" col text-lightblue fs-half m-0 p-0">
+                                    <i class="fa-solid fa-clock"></i> 11:24:30
+                                </span>
+                                <span class="col text-lightgreen m-0 fs-half p-0">
+                                    100,000 تومان
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Python -->
+            </div>
+            <!-- End Line Two -->
+
+            <!-- Start Line Three -->
+            <div class="row g-4 my-1 ">
+                <!-- Flutter  -->
+                <div class="col-md col-6">
+                    <div class="card bg-light text-dark b-shadow bg-opacity-75">
+                        <div class="card-body text-center border-1  p-half">
+                            <img src="./img/Flutter.png" alt="Flutter" class="img-fluid">
+                            <div class="card-title py-2">
+                                <p class="text-end b-curse-title"> آموزش برنامه نویسی فلاتر </p>
+                                <p class="text-end text-secondary b-curse-desc">
+                                    در این دوره فلاتر را از صفر شروع میکنیم به یادگیری و در آخر یه پروژه کاملا کاربردی
+                                    را طراحی میکنیم تا از دانشی که داریم استفاده کنیم
+                                </p>
+                            </div>
+                            <div class="card-text justify-content-end text-end">
+                                <i class="fa-solid fa-user text-secondary fs-half"></i>
+                                <a href="#" class="fs-half text-primary">حسینی</a>
+
+                            </div>
+                            <hr class="h-border">
+                            <div
+                                class=" row card-footer justify-content-between bg-transparent px-0 align-items-center">
+                                <span class=" col text-lightblue fs-half m-0 p-0">
+                                    <i class="fa-solid fa-clock"></i> 11:24:30
+                                </span>
+                                <span class="col text-lightgreen m-0 fs-half p-0">
+                                    100,000 تومان
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End FLutter -->
+
+                <!-- Start Asp -->
+                <div class="col-md col-6">
+                    <div class="card bg-light text-dark b-shadow bg-opacity-75">
+                        <div class="card-body text-center border-1 p-half">
+                            <img src="./img/ASP.png" alt="Flutter" class="img-fluid">
+                            <div class="card-title py-2">
+                                <p class="text-end b-curse-title"> آموزش ASP بصورت پروژه محور</p>
+                                <p class="text-end text-secondary b-curse-desc">
+                                    در این دوره به مباحثی میپردازیم که در آن با استفاده از یک برنامه اندرویدی اطلاعات
+                                    شخصی خود را ثبت کنیم
+                                </p>
+                            </div>
+                            <div class="card-text justify-content-end text-end">
+                                <i class="fa-solid fa-user text-secondary fs-half"></i>
+                                <a href="#" class="fs-half text-primary">حسینی</a>
+
+                            </div>
+                            <hr class="h-border">
+                            <div
+                                class=" row card-footer justify-content-between bg-transparent px-0 align-items-center">
+                                <span class=" col text-lightblue fs-half m-0 p-0">
+                                    <i class="fa-solid fa-clock"></i> 11:24:30
+                                </span>
+                                <span class="col text-lightgreen m-0 fs-half p-0">
+                                    100,000 تومان
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Asp -->
+
+                <!-- Start bootStrap -->
+                <div class="col-md col-6">
+                    <div class="card bg-light text-dark b-shadow bg-opacity-75">
+                        <div class="card-body text-center border-1 p-half">
+                            <img src="./img/BootStrap.jpg" alt="Flutter" class="img-fluid">
+                            <div class="card-title py-2">
+                                <p class="text-end b-curse-title"> آموزش بوت استرپ بصورت پروژه محور</p>
+                                <p class="text-end text-secondary b-curse-desc">
+                                    در این دوره با استفاده از بوت استرپ باهم یه پروژه ساده ولی کاربردی رو طراحی میکنیم
+                                    تا به بوت استرپ تسلط کامل داشته باشیم
+                                </p>
+                            </div>
+                            <div class="card-text justify-content-end text-end">
+                                <i class="fa-solid fa-user text-secondary fs-half"></i>
+                                <a href="#" class="fs-half text-primary">حسینی</a>
+
+                            </div>
+                            <hr class="h-border">
+                            <div
+                                class=" row card-footer justify-content-between bg-transparent px-0 align-items-center">
+                                <span class=" col text-lightblue fs-half m-0 p-0">
+                                    <i class="fa-solid fa-clock"></i> 11:24:30
+                                </span>
+                                <span class="col text-lightgreen m-0 fs-half p-0">
+                                    100,000 تومان
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Bootstrap -->
+
+                <!-- Start Python -->
+                <div class="col-md col-6">
+                    <div class="card bg-light text-dark b-shadow bg-opacity-75">
+                        <div class="card-body text-center border-1 p-half">
+                            <img src="./img/Python.png" alt="Flutter" class="img-fluid">
+                            <div class="card-title py-2">
+                                <p class="text-end b-curse-title"> آموزش هوش مصنوعی در پایتون</p>
+                                <p class="text-end text-secondary b-curse-desc">
+                                    در این دوره با استفاده از پایتون باهم به مباحث هوش مصنوعی میپردازیم و قدم به قدم
+                                    باهم یادمیگیریم
+                                </p>
+                            </div>
+                            <div class="card-text justify-content-end text-end">
+                                <i class="fa-solid fa-user text-secondary fs-half"></i>
+                                <a href="#" class="fs-half text-primary">حسینی</a>
+
+                            </div>
+                            <hr class="h-border">
+                            <div
+                                class=" row card-footer justify-content-between bg-transparent px-0 align-items-center">
+                                <span class=" col text-lightblue fs-half m-0 p-0">
+                                    <i class="fa-solid fa-clock"></i> 11:24:30
+                                </span>
+                                <span class="col text-lightgreen m-0 fs-half p-0">
+                                    100,000 تومان
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Python -->
+            </div>
+            <!-- End Line Three -->
+        </div>
+    </section>
+    <!-- End Latest Course -->
+
+    <!-- Start ArmyTech Banner -->
+    <section class="my-5">
         <div class="container">
-            <div class="d-md-flex justify-content-between align-items-center">
-                <h3 class="mb-3 mb-md-0">برای دریافت آخرین خبر ها ایمیل را وارد کنید</h3>
-                <div class="input-group news-input">
-                    <input type="text" class="form-control" placeholder="ایمیل خود را وارد کنید">
-                    <button type="button" class="btn btn-dark btn-lg">
-                        ثبت ایمیل
-                    </button>
+            <img src="./img/ArmyTec.png" alt="ArmyTech" class="img-fluid rounded-2">
+        </div>
+    </section>
+    <!-- End ArmyTech Banner -->
+
+    <!-- Start New Cusers -->
+    <section class="container">
+        <header class="row justify-content-between mt-5 ">
+            <h6 class="col">جدیدترین دوره ها</h6>
+            <a href="#" class="col text-start fs-half">
+                مشاهده همه دوره ها
+                <i class="fa-solid fa-arrow-left text-lightblue"></i>
+            </a>
+        </header>
+        <div class="justify-content-between">
+            <!-- Start Line One -->
+            <div class="row g-4 my-1 ">
+                <!-- Flutter  -->
+                <div class="col-md col-6">
+                    <div class="card bg-light text-dark b-shadow bg-opacity-75">
+                        <div class="card-body text-center border-1  p-half">
+                            <img src="./img/Flutter.png" alt="Flutter" class="img-fluid">
+                            <div class="card-title py-2">
+                                <p class="text-end b-curse-title"> آموزش برنامه نویسی فلاتر </p>
+                                <p class="text-end text-secondary b-curse-desc">
+                                    در این دوره فلاتر را از صفر شروع میکنیم به یادگیری و در آخر یه پروژه کاملا کاربردی
+                                    را طراحی میکنیم تا از دانشی که داریم استفاده کنیم
+                                </p>
+                            </div>
+                            <div class="card-text justify-content-end text-end">
+                                <i class="fa-solid fa-user text-secondary fs-half"></i>
+                                <a href="#" class="fs-half text-primary">حسینی</a>
+
+                            </div>
+                            <hr class="h-border">
+                            <div
+                                class=" row card-footer justify-content-between bg-transparent px-0 align-items-center">
+                                <span class=" col text-lightblue fs-half m-0 p-0">
+                                    <i class="fa-solid fa-clock"></i> 11:24:30
+                                </span>
+                                <span class="col text-lightgreen m-0 fs-half p-0">
+                                    100,000 تومان
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End FLutter -->
+
+                <!-- Start Asp -->
+                <div class="col-md col-6">
+                    <div class="card bg-light text-dark b-shadow bg-opacity-75">
+                        <div class="card-body text-center border-1 p-half">
+                            <img src="./img/ASP.png" alt="Flutter" class="img-fluid">
+                            <div class="card-title py-2">
+                                <p class="text-end b-curse-title"> آموزش ASP بصورت پروژه محور</p>
+                                <p class="text-end text-secondary b-curse-desc">
+                                    در این دوره به مباحثی میپردازیم که در آن با استفاده از یک برنامه اندرویدی اطلاعات
+                                    شخصی خود را ثبت کنیم
+                                </p>
+                            </div>
+                            <div class="card-text justify-content-end text-end">
+                                <i class="fa-solid fa-user text-secondary fs-half"></i>
+                                <a href="#" class="fs-half text-primary">حسینی</a>
+
+                            </div>
+                            <hr class="h-border">
+                            <div
+                                class=" row card-footer justify-content-between bg-transparent px-0 align-items-center">
+                                <span class=" col text-lightblue fs-half m-0 p-0">
+                                    <i class="fa-solid fa-clock"></i> 11:24:30
+                                </span>
+                                <span class="col text-lightgreen m-0 fs-half p-0">
+                                    100,000 تومان
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Asp -->
+
+                <!-- Start bootStrap -->
+                <div class="col-md col-6">
+                    <div class="card bg-light text-dark b-shadow bg-opacity-75">
+                        <div class="card-body text-center border-1 p-half">
+                            <img src="./img/BootStrap.jpg" alt="Flutter" class="img-fluid">
+                            <div class="card-title py-2">
+                                <p class="text-end b-curse-title"> آموزش بوت استرپ بصورت پروژه محور</p>
+                                <p class="text-end text-secondary b-curse-desc">
+                                    در این دوره با استفاده از بوت استرپ باهم یه پروژه ساده ولی کاربردی رو طراحی میکنیم
+                                    تا به بوت استرپ تسلط کامل داشته باشیم
+                                </p>
+                            </div>
+                            <div class="card-text justify-content-end text-end">
+                                <i class="fa-solid fa-user text-secondary fs-half"></i>
+                                <a href="#" class="fs-half text-primary">حسینی</a>
+
+                            </div>
+                            <hr class="h-border">
+                            <div
+                                class=" row card-footer justify-content-between bg-transparent px-0 align-items-center">
+                                <span class=" col text-lightblue fs-half m-0 p-0">
+                                    <i class="fa-solid fa-clock"></i> 11:24:30
+                                </span>
+                                <span class="col text-lightgreen m-0 fs-half p-0">
+                                    100,000 تومان
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Bootstrap -->
+
+                <!-- Start Python -->
+                <div class="col-md col-6">
+                    <div class="card bg-light text-dark b-shadow bg-opacity-75">
+                        <div class="card-body text-center border-1 p-half">
+                            <img src="./img/Python.png" alt="Flutter" class="img-fluid">
+                            <div class="card-title py-2">
+                                <p class="text-end b-curse-title"> آموزش هوش مصنوعی در پایتون</p>
+                                <p class="text-end text-secondary b-curse-desc">
+                                    در این دوره با استفاده از پایتون باهم به مباحث هوش مصنوعی میپردازیم و قدم به قدم
+                                    باهم یادمیگیریم
+                                </p>
+                            </div>
+                            <div class="card-text justify-content-end text-end">
+                                <i class="fa-solid fa-user text-secondary fs-half"></i>
+                                <a href="#" class="fs-half text-primary">حسینی</a>
+
+                            </div>
+                            <hr class="h-border">
+                            <div
+                                class=" row card-footer justify-content-between bg-transparent px-0 align-items-center">
+                                <span class=" col text-lightblue fs-half m-0 p-0">
+                                    <i class="fa-solid fa-clock"></i> 11:24:30
+                                </span>
+                                <span class="col text-lightgreen m-0 fs-half p-0">
+                                    100,000 تومان
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Python -->
+            </div>
+            <!-- End Line One -->
+
+            <!-- Start Line two -->
+            <div class="row g-4 my-1 ">
+                <!-- Flutter  -->
+                <div class="col-md col-6">
+                    <div class="card bg-light text-dark b-shadow bg-opacity-75">
+                        <div class="card-body text-center border-1  p-half">
+                            <img src="./img/Flutter.png" alt="Flutter" class="img-fluid">
+                            <div class="card-title py-2">
+                                <p class="text-end b-curse-title"> آموزش برنامه نویسی فلاتر </p>
+                                <p class="text-end text-secondary b-curse-desc">
+                                    در این دوره فلاتر را از صفر شروع میکنیم به یادگیری و در آخر یه پروژه کاملا کاربردی
+                                    را طراحی میکنیم تا از دانشی که داریم استفاده کنیم
+                                </p>
+                            </div>
+                            <div class="card-text justify-content-end text-end">
+                                <i class="fa-solid fa-user text-secondary fs-half"></i>
+                                <a href="#" class="fs-half text-primary">حسینی</a>
+
+                            </div>
+                            <hr class="h-border">
+                            <div
+                                class=" row card-footer justify-content-between bg-transparent px-0 align-items-center">
+                                <span class=" col text-lightblue fs-half m-0 p-0">
+                                    <i class="fa-solid fa-clock"></i> 11:24:30
+                                </span>
+                                <span class="col text-lightgreen m-0 fs-half p-0">
+                                    100,000 تومان
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End FLutter -->
+
+                <!-- Start Asp -->
+                <div class="col-md col-6">
+                    <div class="card bg-light text-dark b-shadow bg-opacity-75">
+                        <div class="card-body text-center border-1 p-half">
+                            <img src="./img/ASP.png" alt="Flutter" class="img-fluid">
+                            <div class="card-title py-2">
+                                <p class="text-end b-curse-title"> آموزش ASP بصورت پروژه محور</p>
+                                <p class="text-end text-secondary b-curse-desc">
+                                    در این دوره به مباحثی میپردازیم که در آن با استفاده از یک برنامه اندرویدی اطلاعات
+                                    شخصی خود را ثبت کنیم
+                                </p>
+                            </div>
+                            <div class="card-text justify-content-end text-end">
+                                <i class="fa-solid fa-user text-secondary fs-half"></i>
+                                <a href="#" class="fs-half text-primary">حسینی</a>
+
+                            </div>
+                            <hr class="h-border">
+                            <div
+                                class=" row card-footer justify-content-between bg-transparent px-0 align-items-center">
+                                <span class=" col text-lightblue fs-half m-0 p-0">
+                                    <i class="fa-solid fa-clock"></i> 11:24:30
+                                </span>
+                                <span class="col text-lightgreen m-0 fs-half p-0">
+                                    100,000 تومان
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Asp -->
+
+                <!-- Start bootStrap -->
+                <div class="col-md col-6">
+                    <div class="card bg-light text-dark b-shadow bg-opacity-75">
+                        <div class="card-body text-center border-1 p-half">
+                            <img src="./img/BootStrap.jpg" alt="Flutter" class="img-fluid">
+                            <div class="card-title py-2">
+                                <p class="text-end b-curse-title"> آموزش بوت استرپ بصورت پروژه محور</p>
+                                <p class="text-end text-secondary b-curse-desc">
+                                    در این دوره با استفاده از بوت استرپ باهم یه پروژه ساده ولی کاربردی رو طراحی میکنیم
+                                    تا به بوت استرپ تسلط کامل داشته باشیم
+                                </p>
+                            </div>
+                            <div class="card-text justify-content-end text-end">
+                                <i class="fa-solid fa-user text-secondary fs-half"></i>
+                                <a href="#" class="fs-half text-primary">حسینی</a>
+
+                            </div>
+                            <hr class="h-border">
+                            <div
+                                class=" row card-footer justify-content-between bg-transparent px-0 align-items-center">
+                                <span class=" col text-lightblue fs-half m-0 p-0">
+                                    <i class="fa-solid fa-clock"></i> 11:24:30
+                                </span>
+                                <span class="col text-lightgreen m-0 fs-half p-0">
+                                    100,000 تومان
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Bootstrap -->
+
+                <!-- Start Python -->
+                <div class="col-md col-6">
+                    <div class="card bg-light text-dark b-shadow bg-opacity-75">
+                        <div class="card-body text-center border-1 p-half">
+                            <img src="./img/Python.png" alt="Flutter" class="img-fluid">
+                            <div class="card-title py-2">
+                                <p class="text-end b-curse-title"> آموزش هوش مصنوعی در پایتون</p>
+                                <p class="text-end text-secondary b-curse-desc">
+                                    در این دوره با استفاده از پایتون باهم به مباحث هوش مصنوعی میپردازیم و قدم به قدم
+                                    باهم یادمیگیریم
+                                </p>
+                            </div>
+                            <div class="card-text justify-content-end text-end">
+                                <i class="fa-solid fa-user text-secondary fs-half"></i>
+                                <a href="#" class="fs-half text-primary">حسینی</a>
+
+                            </div>
+                            <hr class="h-border">
+                            <div
+                                class=" row card-footer justify-content-between bg-transparent px-0 align-items-center">
+                                <span class=" col text-lightblue fs-half m-0 p-0">
+                                    <i class="fa-solid fa-clock"></i> 11:24:30
+                                </span>
+                                <span class="col text-lightgreen m-0 fs-half p-0">
+                                    100,000 تومان
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Python -->
+            </div>
+            <!-- End Line Two -->
+
+            <!-- Start Line Three -->
+            <div class="row g-4 my-1 ">
+                <!-- Flutter  -->
+                <div class="col-md col-6">
+                    <div class="card bg-light text-dark b-shadow bg-opacity-75">
+                        <div class="card-body text-center border-1  p-half">
+                            <img src="./img/Flutter.png" alt="Flutter" class="img-fluid">
+                            <div class="card-title py-2">
+                                <p class="text-end b-curse-title"> آموزش برنامه نویسی فلاتر </p>
+                                <p class="text-end text-secondary b-curse-desc">
+                                    در این دوره فلاتر را از صفر شروع میکنیم به یادگیری و در آخر یه پروژه کاملا کاربردی
+                                    را طراحی میکنیم تا از دانشی که داریم استفاده کنیم
+                                </p>
+                            </div>
+                            <div class="card-text justify-content-end text-end">
+                                <i class="fa-solid fa-user text-secondary fs-half"></i>
+                                <a href="#" class="fs-half text-primary">حسینی</a>
+
+                            </div>
+                            <hr class="h-border">
+                            <div
+                                class=" row card-footer justify-content-between bg-transparent px-0 align-items-center">
+                                <span class=" col text-lightblue fs-half m-0 p-0">
+                                    <i class="fa-solid fa-clock"></i> 11:24:30
+                                </span>
+                                <span class="col text-lightgreen m-0 fs-half p-0">
+                                    100,000 تومان
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End FLutter -->
+
+                <!-- Start Asp -->
+                <div class="col-md col-6">
+                    <div class="card bg-light text-dark b-shadow bg-opacity-75">
+                        <div class="card-body text-center border-1 p-half">
+                            <img src="./img/ASP.png" alt="Flutter" class="img-fluid">
+                            <div class="card-title py-2">
+                                <p class="text-end b-curse-title"> آموزش ASP بصورت پروژه محور</p>
+                                <p class="text-end text-secondary b-curse-desc">
+                                    در این دوره به مباحثی میپردازیم که در آن با استفاده از یک برنامه اندرویدی اطلاعات
+                                    شخصی خود را ثبت کنیم
+                                </p>
+                            </div>
+                            <div class="card-text justify-content-end text-end">
+                                <i class="fa-solid fa-user text-secondary fs-half"></i>
+                                <a href="#" class="fs-half text-primary">حسینی</a>
+
+                            </div>
+                            <hr class="h-border">
+                            <div
+                                class=" row card-footer justify-content-between bg-transparent px-0 align-items-center">
+                                <span class=" col text-lightblue fs-half m-0 p-0">
+                                    <i class="fa-solid fa-clock"></i> 11:24:30
+                                </span>
+                                <span class="col text-lightgreen m-0 fs-half p-0">
+                                    100,000 تومان
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Asp -->
+
+                <!-- Start bootStrap -->
+                <div class="col-md col-6">
+                    <div class="card bg-light text-dark b-shadow bg-opacity-75">
+                        <div class="card-body text-center border-1 p-half">
+                            <img src="./img/BootStrap.jpg" alt="Flutter" class="img-fluid">
+                            <div class="card-title py-2">
+                                <p class="text-end b-curse-title"> آموزش بوت استرپ بصورت پروژه محور</p>
+                                <p class="text-end text-secondary b-curse-desc">
+                                    در این دوره با استفاده از بوت استرپ باهم یه پروژه ساده ولی کاربردی رو طراحی میکنیم
+                                    تا به بوت استرپ تسلط کامل داشته باشیم
+                                </p>
+                            </div>
+                            <div class="card-text justify-content-end text-end">
+                                <i class="fa-solid fa-user text-secondary fs-half"></i>
+                                <a href="#" class="fs-half text-primary">حسینی</a>
+
+                            </div>
+                            <hr class="h-border">
+                            <div
+                                class=" row card-footer justify-content-between bg-transparent px-0 align-items-center">
+                                <span class=" col text-lightblue fs-half m-0 p-0">
+                                    <i class="fa-solid fa-clock"></i> 11:24:30
+                                </span>
+                                <span class="col text-lightgreen m-0 fs-half p-0">
+                                    100,000 تومان
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Bootstrap -->
+
+                <!-- Start Python -->
+                <div class="col-md col-6">
+                    <div class="card bg-light text-dark b-shadow bg-opacity-75">
+                        <div class="card-body text-center border-1 p-half">
+                            <img src="./img/Python.png" alt="Flutter" class="img-fluid">
+                            <div class="card-title py-2">
+                                <p class="text-end b-curse-title"> آموزش هوش مصنوعی در پایتون</p>
+                                <p class="text-end text-secondary b-curse-desc">
+                                    در این دوره با استفاده از پایتون باهم به مباحث هوش مصنوعی میپردازیم و قدم به قدم
+                                    باهم یادمیگیریم
+                                </p>
+                            </div>
+                            <div class="card-text justify-content-end text-end">
+                                <i class="fa-solid fa-user text-secondary fs-half"></i>
+                                <a href="#" class="fs-half text-primary">حسینی</a>
+
+                            </div>
+                            <hr class="h-border">
+                            <div
+                                class=" row card-footer justify-content-between bg-transparent px-0 align-items-center">
+                                <span class=" col text-lightblue fs-half m-0 p-0">
+                                    <i class="fa-solid fa-clock"></i> 11:24:30
+                                </span>
+                                <span class="col text-lightgreen m-0 fs-half p-0">
+                                    100,000 تومان
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Python -->
+            </div>
+            <!-- End Line Three -->
+        </div>
+    </section>
+    <!-- End New Course -->
+
+    <!-- Start Footer -->
+    <footer>
+        <div class="bg-dark text-center text-white mt-5 py-3">
+            <div class="container">
+                <div class="row">
+                    <!-- Start Contact Us -->
+                    <div class="col-md-3 text-end pb-2">
+                        <h6>راه های ارتباطی </h6>
+                        <ul class="list-unstyled p-0 mt-3 fs-half">
+                            <li class="mt-2">
+                                <i class="fa-solid fa-phone"> </i>
+                                ۰۲۱-۴۵۱۰-۲۱۲۲
+                            </li>
+
+                            <li class="mt-2">
+                                <i class="fa-solid fa-fax"> </i>
+                                ۰۲۱-۴۵۱۰-۲۱۲۲
+                            </li>
+
+                            <li class="mt-2">
+                                <i class="fa-solid fa-envelope"></i>
+                                ArmyTech@info.com
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- End Contact Us -->
+
+                    <!-- Start Contact Us -->
+                    <div class="col-md pb-2">
+                        <h6>نماد اعتماد ما </h6>
+                        <img src="./img/namad1.png" alt="namad1" class="img-fluid">
+                        <img src="./img/namad1.png" alt="namad1" class="img-fluid">
+                    </div>
+                    <!-- End Contact Us -->
+
+                    <!-- Start Contact Us -->
+                    <div class="col-md-4 mt-2">
+                        <form action="">
+                            <div class="row d-flex justify-content-center b-emailer">
+                                <div class="col-md-9 col-12">
+                                    <div class="form-outline form-white mb-4">
+                                        <input type="email" id="form5Example21" class="form-control"
+                                            placeholder="عضویت در خبرنامه" />
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-3">
+                                    <button type="submit" class="btn btn-light mb-4">
+                                        عضویت
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                        <!-- Social Networks -->
+                        <h6>
+                            شبکه های اجتماعتی
+                            <span class="text-warning">آرمی تک</span>
+                        </h6>
+                        <div id="SocialNetwork" class="mt-3 b-social">
+                            <a href="#" class="text-light mx-2">
+                                <i class="fa-2x fa-brands fa-telegram"></i>
+                            </a>
+                            <a href="#" class="text-light mx-2">
+                                <i class="fa-2x fa-brands fa-instagram"></i>
+                            </a>
+                            <a href="#" class="text-light mx-2">
+                                <i class="fa-2x fa-brands fa-facebook"></i>
+                            </a>
+                            <a href="#" class="text-light mx-2">
+                                <i class="fa-2x fa-brands fa-twitter"></i>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </section>
-    <!-- End NewsLetter -->
-
-    <!-- Start Boxes -->
-    <section class="p-5">
-        <div class="container">
-            <div class="row text-center g-3">
-                <!-- User Card -->
-                <div class="col-md">
-                    <div class="card bg-dark text-light">
-                        <div class="card-body text-center">
-                            <h1 class="mb-3">
-                                <i class="fa-solid fa-user"></i>
-                            </h1>
-                            <h3 class="card-title">
-                                برنامه نویسی
-                            </h3>
-                            <p class="card-text">
-                                آموزش زبان های برنامه نویسی از جمله پایتون سی شارپ پی اچ پی فلاتر
-                            </p>
-                            <a href="#" class="btn btn-primary">بیشتر</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- End User Card -->
-
-                <!-- Web Card -->
-                <div class="col-md ">
-                    <div class="card bg-secondary text-light">
-                        <div class="card-body text-center">
-                            <h1 class="mb-3">
-                                <i class="fa-solid fa-code"></i>
-                            </h1>
-                            <h3 class="card-title">
-                                طراحی وب
-                            </h3>
-                            <p class="card-text">
-                                آموزش طراحی وبسایت از جمله اچ تی ام ال سی اس اس بوت استرپ و سایر دوره های مربوطه
-                            </p>
-                            <a href="#" class="btn btn-dark">بیشتر</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- End WEB Card -->
-
-                <!-- Security Card -->
-                <div class="col-md">
-                    <div class="card bg-dark text-light">
-                        <div class="card-body text-center">
-                            <h1 class="mb-3">
-                                <i class="fa-solid fa-hat-cowboy"></i>
-                            </h1>
-                            <h3 class="card-title">
-                                دوره های هک و امنیت
-                            </h3>
-                            <p class="card-text">
-                                آموزش ترفند ها و دوره های هک کلاه سفید همراه با پیش نیاز های زمینه امنیت
-                            </p>
-                            <a href="#" class="btn btn-primary">بیشتر</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- End Security Card -->
-            </div>
-    </section>
-    <!-- End Boxes -->
-
-    <!-- Start website Learn section -->
-    <section id="Learn" class="p-5 bg-light">
-        <div class="container">
-            <div class="row justify-content-between align-items-center">
-                <div class="col-md p-5">
-                    <h2>
-                        آموزش مبانی طراحی وب
-                    </h2>
-                    <p class="lead">
-                        در این دوره از مبانی و مقدمات طراحی وب شروع به یادگیری میکنیم تا ورود به بازار کار بصورت اصولی و
-                        قدم به قدم باهم به جلو میرویم
-                    </p>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque et dicta accusantium optio non,
-                        architecto, maiores fugiat possimus cumque amet consectetur sapiente, iure placeat natus. Illo
-                        sunt architecto excepturi tenetur!
-                    </p>
-                    <a href="#" class="btn btn-light">
-                        <i class="fa-solid fa-chevron-left"> </i>
-                        اطلاعات بیشتر
-                    </a>
-                </div>
-                <div class="col-md">
-                    <img src="images/WebDesign.jpg" alt="WebDesign" class="img-fluid">
-                </div>
-
-            </div>
-        </div>
-    </section>
-    <!-- End website Learn section -->
-
-    <!-- Start Hack Learn -->
-    <section id="Learn" class="p-5 bg-dark text-light">
-        <div class="container">
-            <div class="row justify-content-between align-items-center">
-                <div class="col-md">
-                    <img src="images/HackLearn.png" alt="WebDesign" class="img-fluid">
-                </div>
-                <div class="col-md p-5">
-                    <h2>
-                        آموزش مبانی هک و امنیت
-                    </h2>
-                    <p class="lead">
-                        در این دوره از مبانی و مقدمات هک و امنیت رو شروع به یادگیری میکنیم تا ورود به بازار کار بصورت
-                        اصولی و
-                        قدم به قدم باهم به جلو میرویم
-                    </p>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque et dicta accusantium optio non,
-                        architecto, maiores fugiat possimus cumque amet consectetur sapiente, iure placeat natus. Illo
-                        sunt architecto excepturi tenetur!
-                    </p>
-                    <a href="#" class="btn btn-light">
-                        <i class="fa-solid fa-chevron-left"> </i>
-                        اطلاعات بیشتر
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- End Hack Learn -->
-
-    <!-- Start Question Accordian -->
-    <section id="Questions" class="my-5">
-        <div class="container">
-            <h2 class="text-center mt-4">
-                سوالات پرتکرار
-            </h2>
-            <div class="accordion accordion-flush" id="Questions">
-                <!-- Item One -->
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="flush-headingOne">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                            دیر یا زود بودن برای یادگیری
-                        </button>
-                    </h2>
-                    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
-                        data-bs-parent="#Questions">
-                        <div class="accordion-body">
-                            هیچوقت برای یادگیری دیر نیست و هر کس در بازه زمانی خودش حرکت میکنه و تو از هیچکس عقب یا جلو
-                            نیستی
-                        </div>
-                    </div>
-                </div>
-                <!-- End Item  One -->
-
-                <!-- Item Two -->
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="Flush-headingTwo">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                            پیش نیاز لازم دارد یا نه؟
-                        </button>
-                    </h2>
-                    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="Flush-headingTwo"
-                        data-bs-parent="#Questions">
-                        <div class="accordion-body">
-                            تمامی دوره ها بصورت ۰ تا ۱۰۰ هست و هیچگونه پیش نیاز و اطلاعات دیگری ندارد
-                        </div>
-                    </div>
-                </div>
-                <!-- End Item Two -->
-
-                <!-- Start Item 3 -->
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="questionThree">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#QuestionThree">
-                            چقد طول میکشد تا یاد گرفت؟
-                        </button>
-                    </h2>
-                    <div id="QuestionThree" class="accordion-collapse collapse" aria-labelledby="questionThree"
-                        data-bs-parent="#Questions">
-                        <div class="accordion-body">
-                            بستگی به زمان و تمرینی دارد که در طول روز برای تخصصی که در نظر دارید وقت میگذارید
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- End Question Accordian -->
-
-    <!-- Start Instructors Section -->
-    <section id="Instructors" class="p-5 bg-primary">
-        <div class="container">
-            <h2 class="text-center text-white">
-                مربیان و مدرسان
-                <span class="text-warning">آرمی تک</span>
-            </h2>
-            <p class="lead text-center text-white pt-5">
-                با بیش از ۵ سال سابقه کار در زمینه برنامه نویسی اندروید و آی او اس و طراحی و توسعه وبسایت در بستر
-                اینترنت
+        <div class="text-center text-white-50 justify-content-md-center b-copyright p-3">
+            <p class="m-0">
+                  تمامی حقوق مادی و معنوی این سایت متعلق به <span class="text-warning">آرمی تک</span>
+                    می باشد و هرگونه کپی برداری غیرقانونی محسوب خواهد شد
+                    =======
+                    تمامی حقوق مادی و معنوی این سایت متعلق به
+                    <span class="text-warning">آرمی تک</span>
+                    می باشد و هرگونه کپی برداری غیرقانونی محسوب خواهد شد
+                    
             </p>
-            <div class="row g-4">
-                <!-- Start Instructors 1 -->
-                <div class="col-md-6 col-lg-3">
-                    <div class="card bg-light">
-                        <div class="card-body text-center">
-                            <i class="fa-solid fa-3x fa-circle-user "></i>
-                            <h3 class="card-title mb-3">محمد حسینی</h3>
-                            <p class="card-text">
-                                برنامه نویس پایتون, گرافیست, سئو و طراحی صفحات وبسایت
-                            </p>
-                            <a href="#">
-                                <i class="fa-brands fa-twitter text-dark mx-1"></i>
-                            </a>
-                            <a href="#">
-                                <i class="fa-brands fa-telegram text-dark mx-1"></i>
-                            </a>
-                            <a href="#">
-                                <i class="fa-brands fa-facebook text-dark mx-1"></i>
-                            </a>
-                            <a href="#">
-                                <i class="fa-brands fa-instagram text-dark mx-1"></i>
-                            </a>
-                            <a href="#">
-                                <i class="fa-brands fa-linkedin text-dark mx-1"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <!-- End Instracturs 1 -->
-
-                <!-- Start Instructors 2 -->
-                <div class="col-md-6 col-lg-3">
-                    <div class="card bg-light">
-                        <div class="card-body text-center">
-                            <img src="images/Farzad.jpg" alt="FarzadVatankhah" class="rounded-circle mb-3 w-35">
-                            <h3 class="card-title mb-3">فرزاد وطن خواه</h3>
-                            <p class="card-text">
-                                برنامه نویس پایتون, گرافیست, سئو و طراحی صفحات وبسایت و برنامه نویس فلاتر
-                            </p>
-                            <a href="#">
-                                <i class="fa-brands fa-twitter text-dark mx-1"></i>
-                            </a>
-                            <a href="#">
-                                <i class="fa-brands fa-telegram text-dark mx-1"></i>
-                            </a>
-                            <a href="#">
-                                <i class="fa-brands fa-facebook text-dark mx-1"></i>
-                            </a>
-                            <a href="#">
-                                <i class="fa-brands fa-instagram text-dark mx-1"></i>
-                            </a>
-                            <a href="#">
-                                <i class="fa-brands fa-linkedin text-dark mx-1"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <!-- End Instracturs 2 -->
-
-                <!-- Start Instructors 3 -->
-                <div class="col-md-6 col-lg-3">
-                    <div class="card bg-light">
-                        <div class="card-body text-center">
-                            <img src="images/Farzad.jpg" alt="FarzadVatankhah" class="rounded-circle mb-3 w-35">
-                            <h3 class="card-title mb-3">فرزاد وطن خواه</h3>
-                            <p class="card-text">
-                                برنامه نویس پایتون, گرافیست, سئو و طراحی صفحات وبسایت و برنامه نویس فلاتر
-                            </p>
-                            <a href="#">
-                                <i class="fa-brands fa-twitter text-dark mx-1"></i>
-                            </a>
-                            <a href="#">
-                                <i class="fa-brands fa-telegram text-dark mx-1"></i>
-                            </a>
-                            <a href="#">
-                                <i class="fa-brands fa-facebook text-dark mx-1"></i>
-                            </a>
-                            <a href="#">
-                                <i class="fa-brands fa-instagram text-dark mx-1"></i>
-                            </a>
-                            <a href="#">
-                                <i class="fa-brands fa-linkedin text-dark mx-1"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <!-- End Instracturs 3 -->
-
-                <!-- Start Instructors 4 -->
-                <div class="col-md-6 col-lg-3">
-                    <div class="card bg-light">
-                        <div class="card-body text-center">
-                            <img src="images/Farzad.jpg" alt="FarzadVatankhah" class="rounded-circle mb-3 w-35">
-                            <h3 class="card-title mb-3">فرزاد وطن خواه</h3>
-                            <p class="card-text">
-                                برنامه نویس پایتون, گرافیست, سئو و طراحی صفحات وبسایت و برنامه نویس فلاتر
-                            </p>
-                            <a href="#">
-                                <i class="fa-brands fa-twitter text-dark mx-1"></i>
-                            </a>
-                            <a href="#">
-                                <i class="fa-brands fa-telegram text-dark mx-1"></i>
-                            </a>
-                            <a href="#">
-                                <i class="fa-brands fa-facebook text-dark mx-1"></i>
-                            </a>
-                            <a href="#">
-                                <i class="fa-brands fa-instagram text-dark mx-1"></i>
-                            </a>
-                            <a href="#">
-                                <i class="fa-brands fa-linkedin text-dark mx-1"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <!-- End Instracturs 4 -->
-            </div>
         </div>
-    </section>
-    <!-- End Instructors Section -->
+    </footer>
     <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+
 </body>
 
 </html>
