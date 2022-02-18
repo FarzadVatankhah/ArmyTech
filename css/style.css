@@ -26,7 +26,7 @@ i {
 
 .b-searchbox {
     border-radius: 0 10px 10px 0 !important;
-    font-size: 13px;
+    font-size    : 13px;
 }
 
 .w-85 {
@@ -61,7 +61,7 @@ a:hover {
 
 .b-copyright {
     background-color: #0F1111;
-    font-size: .9rem;
+    font-size       : .9rem;
 }
 
 #topNav li a {
@@ -85,48 +85,107 @@ a:hover {
     padding-right: 0;
 }
 
-#secNav li a{
+#secNav li a {
     font-size: .9rem;
-    color: rgb(63, 62, 62) !important;
+    color    : rgb(63, 62, 62) !important;
 }
 
 .b-search-box {
     padding-left: 0 !important;
 }
-.b-emailer input{
+
+.b-emailer input {
     font-size: .6rem;
-    height: 40px;
+    height   : 40px;
 }
-.b-curse-title{
+
+.b-curse-title {
     font-size: .9rem;
 }
-.b-curse-desc{
+
+.b-curse-desc {
     font-size: .8rem;
 }
-.b-border{
+
+.b-border {
     border: #e4e4e4 solid 1px;
 }
-.b-shadow{
+
+.b-shadow {
     box-shadow: 0 0 15px 3px #e4e4e4;
 }
 
-.fs-mediom{
+.fs-mediom {
     font-size: .8rem;
 }
 
-.fs-small{
+.fs-small {
     font-size: .7rem;
 }
 
-@media (max-width:767px){
-    #topNav{
+@media (max-width:767px) {
+    #topNav {
         margin-top: 1rem;
     }
-    .b-curse-title{
+
+    .b-curse-title {
         font-size: .8rem;
     }
 
-    .b-curse-desc{
+    .b-curse-desc {
         font-size: .7rem;
     }
+}
+
+.b-special {
+    background-color: rgb(220, 53, 69) !important;
+    padding         : .7rem .1rem;
+}
+
+.b-special .b-sp-first {
+    place-self: center;
+    text-align: center;
+}
+
+.b-special .b-sp-first span {
+    font-size: 1rem;
+    color: rgb(255, 255, 255);
+    padding-bottom: 1rem;
+}
+.b-special .b-sp-first span i{
+    font-size: 2rem;
+    color: rgb(255, 255, 255);
+}
+
+.b-special .b-sp-first a {
+    font-size: 14px;
+    color: #fff;
+}
+
+.b-sp-box img {
+
+    padding: .4rem;
+}
+
+.b-sp-box .b-off span {
+    color        : #fff;
+    background   : rgb(220, 53, 69);
+    padding      : .2rem .4rem;
+    font-size    : 12px;
+    border-radius: 10px;
+}
+
+.b-sp-box .b-price {
+    text-align: left;
+
+}
+
+.b-sp-box .b-price span {
+    display  : block;
+    font-size: 13px;
+}
+
+.b-sp-box .b-price .b-old-price {
+    text-decoration: line-through;
+    color          : #818181;
 }
