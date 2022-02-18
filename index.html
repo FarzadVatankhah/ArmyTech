@@ -99,11 +99,7 @@
         <!-- Start Slider -->
         <div class="row text-center justify-content-between my-5">
             <div id="LatestCourses" class="carousel slide col-lg-8 col-md-8 col-sm-12" data-bs-ride="carousel">
-                <p class="text-end text-secondary mt-3 mt-sm-0 mb-3 ">
-                    <i class="fa-solid fa-film"></i>
-                    آخرین دوره های آرمی تک
-                </p>
-
+                
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <img src="img/Slide01.png" class="d-block w-100" alt="C#">
@@ -117,21 +113,20 @@
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#LatestCourses"
                     data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
+                    <!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span> -->
+                    <span class="b-left"> > </span>
+                    <span class="visually-hidden b-white">Previous</span>
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#LatestCourses"
+                <button class="carousel-control-next " type="button" data-bs-target="#LatestCourses"
                     data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="b-left"> 
+                        < 
+                    </span>
                     <span class="visually-hidden">Next</span>
                 </button>
             </div>
 
             <div id="FavoraiteSlider" class="carousel slide col-lg-4 col-md-4 col-sm-12 " data-bs-ride="carousel">
-                <p class="text-end text-secondary mt-3 mt-sm-0 mb-3 ">
-                    <i class="fa-solid fa-heart"></i>
-                    دوره های محبوب سایت آرمی تک
-                </p>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
 
@@ -405,7 +400,7 @@
                 </div>
 
                 <!-- Start Items  -->
-                <div class="col-md-3 col-lg-2 col-3 b-sp-box">
+                <div class="col-md-3 col-lg-2 col-4 b-sp-box">
                     <div class="bg-light text-dark">
                         <div class="text-center">
                             <img src="./img/Flutter.png" alt="Flutter" class="img-fluid">
@@ -423,7 +418,8 @@
 
                     </div>
                 </div>
-                <div class="col-md-3 col-lg-2 col-3 b-sp-box">
+
+                <div class="col-md-3 col-lg-2 col-4 b-sp-box">
                     <div class="bg-light text-dark">
                         <div class="text-center">
                             <img src="./img/Flutter.png" alt="Flutter" class="img-fluid">
@@ -441,7 +437,8 @@
 
                     </div>
                 </div>
-                <div class="col-md-3 col-lg-2 col-3 b-sp-box">
+
+                <div class="col-md-3 col-lg-2 col-3 d-md-block d-none b-sp-box">
                     <div class="bg-light text-dark">
                         <div class="text-center">
                             <img src="./img/Flutter.png" alt="Flutter" class="img-fluid">
@@ -459,7 +456,8 @@
 
                     </div>
                 </div>
-                <div class="col-md-3 col-lg-2 col-3 b-sp-box">
+
+                <div class="col-md-3 col-lg-2 col-3 d-md-block  d-none d-md-none d-lg-block b-sp-box">
                     <div class="bg-light text-dark">
                         <div class="text-center">
                             <img src="./img/Flutter.png" alt="Flutter" class="img-fluid">
@@ -477,7 +475,8 @@
 
                     </div>
                 </div>
-                <div class="col-md-3 col-lg-2 col-3 b-sp-box">
+
+                <div class="col-md-3 col-lg-2 col-3  d-md-block d-none d-md-none d-lg-block b-sp-box">
                     <div class="bg-light text-dark">
                         <div class="text-center">
                             <img src="./img/Flutter.png" alt="Flutter" class="img-fluid">
@@ -663,7 +662,7 @@
     <footer>
         <div class="bg-dark text-center text-white mt-5 py-3">
             <div class="container">
-                <div class="row">
+                <div class="row align-items-center">
                     <!-- Start Contact Us -->
                     <div class="col-md-3 text-end pb-2">
                         <h6>راه های ارتباطی </h6>
@@ -694,29 +693,15 @@
                     </div>
                     <!-- End Contact Us -->
 
+                    
                     <!-- Start Contact Us -->
-                    <div class="col-md-4 mt-2">
-                        <form action="">
-                            <div class="row d-flex justify-content-center b-emailer">
-                                <div class="col-md-9 col-12">
-                                    <div class="form-outline form-white mb-4">
-                                        <input type="email" id="form5Example21" class="form-control"
-                                            placeholder="عضویت در خبرنامه" />
-                                    </div>
-                                </div>
-                                <div class="col-md-3 col-3">
-                                    <button type="submit" class="btn btn-light mb-4">
-                                        عضویت
-                                    </button>
-                                </div>
-                            </div>
-                        </form>
-                        <!-- Social Networks -->
-                        <h6>
+                    <div class="col-md-4 mt-2 text-end">
+                         <!-- Social Networks -->
+                         <h6>
                             شبکه های اجتماعتی
                             <span class="text-warning">آرمی تک</span>
                         </h6>
-                        <div id="SocialNetwork" class="mt-3 b-social">
+                        <div id="SocialNetwork" class="my-3 b-social">
                             <a href="#" class="text-light mx-2">
                                 <i class="fa-2x fa-brands fa-telegram"></i>
                             </a>
@@ -730,6 +715,22 @@
                                 <i class="fa-2x fa-brands fa-twitter"></i>
                             </a>
                         </div>
+                        <form action="">
+                            <div class="row d-flex justify-content-center b-emailer">
+                                <div class="col-md-9 col-12">
+                                    <div class="form-outline form-white mb-4 w-sm">
+                                        <input type="email" id="form5Example21" class="form-control"
+                                            placeholder="عضویت در خبرنامه" />
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-3">
+                                    <button type="submit" class="btn btn-light mb-4">
+                                        عضویت
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                       
                     </div>
                 </div>
             </div>
