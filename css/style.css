@@ -224,7 +224,7 @@ ul{
     padding: 10px 0;
 }
 
-.b-couse-cover{
+.b-course-cover{
     border-radius: 5px;
 }
 
@@ -252,8 +252,55 @@ a:hover{
 .Address-bar{
     display: flex;
 }
+
+.b-course-info{
+    background-color: #E3F4FA;
+    border: 1px dashed #d7e0e9;
+    border-radius: 10px ;
+    color: #00b3e9;
+    font-size: .8rem;
+}
+
+.cours-number{
+    display: inline-block !important;
+    border: 2px solid #d7e0e9;
+    width: 30px;
+    height: 30px;
+    line-height: 28px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    color: #556167;
+    position: relative;
+    right: -17px;
+    background-color: #fff;
+    border-radius: 100%;
+}
+
+.b-course-Alert{
+    background-color: #FCF3C4;
+    border: 1px dashed #d7e0e9;
+    border-radius: 10px;
+    font-size: .8rem;
+    color: #8a6d3b;
+}
+
+.b-course-item{
+    background-color: #fff;
+    border-radius: 10px;
+    border: 1px dashed #d7e0e9;
+    font-size: .8rem;
+}
+
+.b-download{
+    font-size: 1.2rem; 
+    
+    border-radius: 100%;
+}
+
 @media(max-width:768px){
     .b-searchbox{
         width: 40%;
     }
+    
 }
