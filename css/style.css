@@ -94,6 +94,10 @@ a:hover {
     padding-left: 0 !important;
 }
 
+.b-secmenu{
+    flex-wrap: nowrap !important;
+}
+
 .b-emailer input {
     font-size: .6rem;
     height: 40px;
@@ -207,4 +211,39 @@ a:hover {
     opacity: 100% !important;
     padding: .2rem 1rem;
     border-radius: 20%;
+}
+
+.b-fs-small{
+    font-size: .84rem;
+}
+ul{
+    list-style: none;
+}
+
+.b-course-info >li{
+    padding: 10px 0;
+}
+
+.b-couse-cover{
+    border-radius: 5px;
+}
+
+.b-warning{
+    background-color: #E6F7DB;
+    border: 1px solid #d5edc6;
+}
+.b-share{
+    border-radius: 100%;
+}
+
+
+a:hover{
+    color: #57CDEF;
+}
+
+
+@media(max-width:768px){
+    .b-searchbox{
+        width: 40%;
+    }
 }
