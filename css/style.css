@@ -241,7 +241,17 @@ a:hover{
     color: #57CDEF;
 }
 
+.b-learn-nav{
+    flex-flow: nowrap;
+}
 
+.bg-addressbar{
+    background-color: #f0f2f7;
+}
+
+.Address-bar{
+    display: flex;
+}
 @media(max-width:768px){
     .b-searchbox{
         width: 40%;

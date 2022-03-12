@@ -22,48 +22,93 @@
 
 <body>
     <!-- Start Navbar -->
-    <nav class="navbar navbar-expand-md navbar-light bg-transparent mt-3 ">
-        <div class="container b-secmenu">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#secNav"
-                aria-controls="secNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="mx-0 row w-100 align-items-center">
-                <div class="col-md-12 col-lg-8 collapse navbar-collapse" id="secNav">
-                    <ul class="navbar-nav p-0">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">آخرین دوره ها</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">دوره های جدید</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">بیشترین بازدید</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">وبلاگ</a>
-                        </li>
-                    </ul>
+    <header>
+        <!-- first nav -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light b-fs-small">
+            <div class="container-fluid px-5">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#learnnav"
+                    aria-controls="learnnav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="learnnav">
+                    <div class="navbar-nav">
+                        <a class="nav-link " aria-current="page" href="#">آموزش برنامه نویسی</a>
+                        <a class="nav-link" href="#">آموزش طراحی وب</a>
+                        <a class="nav-link" href="#">آموزش هک و امنیت</a>
+                        <a class="nav-link " href="#" tabindex="-1" aria-disabled="true">آموزش گرافیک</a>
+                    </div>
                 </div>
-                <div class="b-search-box col-md-12 col-lg-4 my-2 my-sm-0">
-                    <form class="d-flex">
-                        <input class="form-control me-2 b-searchbox" type="search" placeholder="جستجو..."
-                            aria-label="Search">
-                        <button class="btn btn-danger b-btn-search" type="submit">جستجو</button>
-                    </form>
+                <div class="navbar-nav b-learn-nav">
+                    <a class="nav-link" href="#">
+                        <i class="fa-solid fa-phone text-danger"></i>
+                        +۹۸۹۱۴۵۳۵۰۲۱۹
+                    </a>
+                    <a class="nav-link" href="#">
+                        <i class="fa-solid fa-envelope text-danger"></i>
+                        farzad.vtn77@gmail.com
+                    </a>
                 </div>
 
             </div>
+        </nav>
+        <!--end First nav -->
 
+
+        <!-- Start Main Nav -->
+        <nav class="navbar navbar-expand-md navbar-light bg-transparent mt-2 border-0 b-shadow py-3">
+            <div class="container-fluid b-secmenu">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#secNav"
+                    aria-controls="secNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="mx-0 row w-100 align-items-center">
+                    <div class="col-md-12 col-lg-8 collapse navbar-collapse" id="secNav">
+                        <ul class="navbar-nav p-0">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">آخرین دوره ها</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">دوره های جدید</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">بیشترین بازدید</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">وبلاگ</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="b-search-box col-md-12 col-lg-4 my-2 my-sm-0">
+                        <form class="d-flex">
+                            <input class="form-control me-2 b-searchbox" type="search" placeholder="جستجو..."
+                                aria-label="Search">
+                            <button class="btn btn-danger b-btn-search" type="submit">جستجو</button>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </nav>
+        <!-- End Main nav -->
+
+        <!-- Start Address Bar -->
+        <div class="container b-fs-small">
+            <div class="bg-addressbar mt-3 py-3 text-secondary Address-bar">
+                <i class="fa-solid fa-house"></i>
+                <nav class="text-secondary">
+                    <a class="text-secondary" href="#">خانه</a>
+                    <i class="fa-solid fa-angle-left"></i>
+                    <a class="text-secondary" href="#">آموزش هوش مصنوعی در پایتون</a>
+                </nav>
+            </div>
         </div>
-    </nav>
+        <!-- End Address Bar -->
+    </header>
     <!-- End Navbar -->
 
     <!-- Start body -->
-    <div class="container">
-        <div class="my-5">
-            <img src="img/ArmyTec.png" alt="ArmyTech" class="img-fluid">
-        </div>
+    <div class="container mt-5">
+
         <section class="row">
             <!-- Start course info -->
             <div class="col-md-4">
@@ -122,13 +167,13 @@
                 </div>
 
                 <!-- Start question  -->
-                <div class="mt-4 text-center">
+                <div class="mt-4 text-center d-none d-md-block">
                     <button class="btn btn-danger px-5">پرسش و پاسخ در رابطه با این دوره</button>
                 </div>
                 <!-- End question -->
 
                 <!-- Start another course -->
-                <div class="card bg-light text-dark my-4 border-1">
+                <div class="card bg-light text-dark my-4 border-1 d-none d-md-block">
                     <div class="card-body border-bottom text-center fs-mediom">
                         دوره های در حال ثبت نام آکادمی آرمی تک
                     </div>
@@ -175,7 +220,7 @@
             <!-- End Course info -->
 
             <!-- Start Couse description -->
-            <div class="col-md-8 mt-3 mt-md-0">
+            <div class="col-md-8 mt-5 mt-md-0">
                 <div class="card bg-light text-dark b-shadow border-0">
                     <div class="card-body text-center ">
                         <img src="img/Python.png" alt="python" class="img-fluid b-couse-cover w-75">
@@ -204,6 +249,9 @@
         </section>
     </div>
     <!-- End Body -->
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
 </body>
 
 </html>
