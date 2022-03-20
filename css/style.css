@@ -92,6 +92,7 @@ a:hover {
 
 .b-search-box {
     padding-left: 0 !important;
+    text-align: end;
 }
 
 .b-secmenu{
